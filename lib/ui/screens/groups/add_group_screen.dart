@@ -10,6 +10,11 @@ class AddGroupScreen extends StatefulWidget {
 class _AddGroupScreenState extends State<AddGroupScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Add group'),
+      ),
+      body: Container(),
+    );
   }
 }

@@ -11,7 +11,8 @@ class ApiConstant {
   static const createUserApi = "$_versionOneUrl/UserDetail/CreateUser";
   static const loginApi = "$_versionOneUrl/Authentication/login";
   static const forgotPasswordApi = "$_versionOneUrl/Authentication/ForgotPassword";
-  //rxchatapis.azurewebsites.net/api/v1/Authentication/ForgotPassword?EmailId=kumarsahujaydeep@gmail.com
+  static const createGroupApi = "$_versionOneUrl/Group/CreateGroup";
+  //https://rxchatapis.azurewebsites.net/api/v1/Group/CreateGroup
 }
 
 class VersionKeys {

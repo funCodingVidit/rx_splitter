@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:http/http.dart' as http;
 import 'package:rx_splitter/constants/api_constant.dart';
 import 'package:rx_splitter/ui/screens/login/login_screen.dart';
