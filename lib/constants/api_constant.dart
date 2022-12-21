@@ -6,12 +6,15 @@ class ApiConstant {
     'Authorization': 'Bearer ${PreferencesUtils().getToken()}'
   };
 
-  static const _baseUrl = "https://rxchatapis.azurewebsites.net/api"; //10.0.2.2 vidha.jangid.radixusers3.com
+  static const _baseUrl = "https://rxsplitterapis.azurewebsites.net/api"; //10.0.2.2 vidha.jangid.radixusers3.com
   static const _versionOneUrl = _baseUrl + VersionKeys.versionOne;
   static const createUserApi = "$_versionOneUrl/UserDetail/CreateUser";
   static const loginApi = "$_versionOneUrl/Authentication/login";
   static const forgotPasswordApi = "$_versionOneUrl/Authentication/ForgotPassword";
-  //rxchatapis.azurewebsites.net/api/v1/Authentication/ForgotPassword?EmailId=kumarsahujaydeep@gmail.com
+  static const createGroupApi = "$_versionOneUrl/Group/CreateGroup";
+  static const getGroupsByIdApi = "$_versionOneUrl/Group/GetAllGroupsOfUser";
+  //https://rxchatapis.azurewebsites.net/api/v1/Group/GetGroupById
+  //https://https://rxsplitterapis.azurewebsites.net/api/v1/%22
 }
 
 class VersionKeys {
