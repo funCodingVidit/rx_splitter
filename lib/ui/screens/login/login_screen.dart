@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 import 'package:rx_splitter/constants/app_colors.dart';
 import 'package:rx_splitter/controllers/authentication/login_controller.dart';
 import 'package:rx_splitter/ui/screens/forgotPassword/forgot_password_screen.dart';
-import 'package:rx_splitter/ui/screens/home/home_screen.dart';
+import 'package:rx_splitter/ui/screens/groups/display_groups.dart';
 import 'package:rx_splitter/ui/screens/registration/registration_screen.dart';
 import 'package:rx_splitter/utils/preferences.dart';
 
@@ -42,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
         PreferencesUtils().setToken(responseData['token']);
         //final decodedToken = TokenDecoder().decoder(responseData['token']);
         PreferencesUtils().setIsLogged(true);
-        Get.offAll(()=> const HomeScreen());
+        Get.offAll(()=> const DisplayGroupsScreen());
       } else {
         changeIsLoadingValue();
         Get.snackbar("Error", "${responseData['error']}", colorText: AppColors.white, backgroundColor: AppColors.red);

@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:rx_splitter/constants/api_constant.dart';
 
-class AddGroupController extends GetxController {
+class AddGroupMemberController extends GetxController {
   final groupName = TextEditingController();
 
   @override

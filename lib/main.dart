@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rx_splitter/ui/screens/home/home_screen.dart';
+import 'package:rx_splitter/ui/screens/groups/display_groups.dart';
 import 'package:rx_splitter/ui/screens/login/login_screen.dart';
 import 'package:rx_splitter/utils/preferences.dart';
 
@@ -21,7 +21,7 @@ class RxSplitterApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: isLoggedIn ? const HomeScreen() : const LoginScreen(),
+      home: isLoggedIn ? const DisplayGroupsScreen() : const LoginScreen(),
     );
   }
 }
