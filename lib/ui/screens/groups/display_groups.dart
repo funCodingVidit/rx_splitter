@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rx_splitter/constants/app_colors.dart';
 import 'package:rx_splitter/controllers/groups/display_groups_controller.dart';
+import 'package:rx_splitter/ui/screens/groups/show_group_detail.dart';
 
 class DisplayGroupsScreen extends StatefulWidget {
   const DisplayGroupsScreen({Key? key}) : super(key: key);
@@ -38,11 +39,21 @@ class _DisplayGroupsScreenState extends State<DisplayGroupsScreen> {
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.all(4.0),
-                    child: Card(
-                      margin: const EdgeInsets.all(6.0),
-                      child: Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: Text(state![index]['groupName']),
+                    child: InkWell(
+                      onTap: () {
+                        Get.to(
+                          () => ShowGroupDetailScreen(
+                            groupId: state![index]['id'],
+                            groupName: state[index]['groupName'],
+                          ),
+                        );
+                      },
+                      child: Card(
+                        margin: const EdgeInsets.all(6.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Text(state![index]['groupName']),
+                        ),
                       ),
                     ),
                   );

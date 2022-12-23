@@ -9,4 +9,5 @@ class AppColors {
   static const grey = Colors.grey;
   static const red = Colors.red;
   static const green = Colors.green;
+  static const kGreen = Colors.lightGreen;
 }
