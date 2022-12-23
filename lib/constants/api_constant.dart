@@ -13,8 +13,9 @@ class ApiConstant {
   static const forgotPasswordApi = "$_versionOneUrl/Authentication/ForgotPassword";
   static const createGroupApi = "$_versionOneUrl/Group/CreateGroup";
   static const getGroupsByIdApi = "$_versionOneUrl/Group/GetAllGroupsOfUser";
-  //https://rxchatapis.azurewebsites.net/api/v1/Group/GetGroupById
-  //https://https://rxsplitterapis.azurewebsites.net/api/v1/%22
+  static const createGroupMemberApi = "$_versionOneUrl/GroupMember/CreateGroupMember";
+  static const getGroupMembersApi = "$_versionOneUrl/GroupMember/GetAllMembersByGroupId";
+  //https://rxchatapis.azurewebsites.net/api/v1/Group/GetGroupDetailsById/38
 }
 
 class VersionKeys {
